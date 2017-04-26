@@ -1,0 +1,126 @@
+
+
+.main {
+    width: 1000px;
+    margin: 0 auto;
+}
+#content {
+    margin-top: 50px;
+}
+.gun_pic {
+    width: 520px;
+    float: left;
+    border: 1px solid #ddd;
+    padding: 7px;
+    background: #ffffff;
+    border-bottom: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+}
+.gun_pic img {
+	width: 100%;
+}
+
+.box_desc {
+    float: right;
+    width: 435px;
+    text-align: left;
+}
+
+
+.box_desc h1 {
+    font-weight: normal;
+    margin: 0;
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 8px;
+    font-family: Arial, sans;
+}
+
+.box_desc ul {
+    list-style-type: none;
+    margin: 60px 0px 17px 0px;
+    padding-left: 40px;
+    padding-right: 0px;
+    color: #333333;
+    font-family: Arial, sans;
+    font-size: 16px;
+}
+.box_desc ul li {
+    margin-bottom: 5px;
+    line-height: 25px;
+}
+
+.box_desc ul li .sprite {
+    position: absolute;
+    width: 12px;
+    height: 11px;
+    margin-top: 4px;
+    margin-left: -17px;
+    margin-right: 0px;
+    background-image: url(../img/yes_icon.png);
+    background-repeat: no-repeat;
+}
+
+#install-button {
+	margin-top: 60px;
+    background: #62c52b;
+    margin-left: 28px;
+    background: -webkit-linear-gradient(top, #62c52b, #4f9d22);
+    text-shadow: 2px 2px 2px #327d14;
+    width: 305px;
+    height: 50px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    display: block;
+}
+
+#install-button:hover {
+    box-shadow: 0px 2px 7px #486c15, 0 1px 0 0 #486c15;
+}
+
+.con {
+    padding: 30px 0px;
+}
+
+.container {
+    padding: 40px 10px 0 10px;
+    height: auto;
+    overflow: hidden;
+}
+.container .main {
+    width: 630px;
+    float: left;
+    overflow: hidden;
+    padding: 0px 0px 0px 40px;
+}
+
+.container .main .out_line {
+    text-indent: 2em;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+.container .side {
+    width: 275px;
+    float: right;
+    padding: 0 0 30px 15px;
+    border-left: 1px solid #ccc;
+}
+
+
+.container .side h2{
+    font-size: 22px;
+    color: #333;
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+.container .side ul li p {
+	margin-bottom: 10px;
+}
+
+
+
+    

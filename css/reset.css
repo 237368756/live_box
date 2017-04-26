@@ -1,0 +1,257 @@
+@charset "utf-8";
+ 
+/* 
+        @名称: base
+        @功能: 重设浏览器默认样式
+        @@timestamp
+*/
+ 
+/* 防止用户自定义背景颜色对网页的影响，添加让用户可以自定义字体 */
+html{
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+ 
+/* 内外边距通常让各个浏览器样式的表现位置不同 */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+        margin:0;padding:0;
+}
+ 
+/* 重设 HTML5 标签, IE 需要在 js 中 createElement(TAG) */
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section { 
+    display:block;
+}
+ 
+/* HTML5 媒体文件跟 img 保持一致 */
+audio,canvas,video {
+    display: inline-block;*display: inline;*zoom: 1;
+}
+ 
+/* 要注意表单元素并不继承父级 font 的问题 */
+body,button,input,select,textarea{
+        font:12px/1.5 tahoma,arial,\5b8b\4f53;
+}
+input,select,textarea{
+        font-size:100%;
+}
+ 
+/* 去掉各Table  cell 的边距并让其边重合 */
+table{
+        border-collapse:collapse;border-spacing:0;
+}
+ 
+/* IE bug fixed: th 不继承 text-align*/
+th{
+        text-align:inherit;
+}
+ 
+/* 去除默认边框 */
+fieldset,img{
+        border:0;
+}
+ 
+/* ie6 7 8(q) bug 显示为行内表现 */
+iframe{
+        display:block;
+}
+ 
+/* 去掉 firefox 下此元素的边框 */
+abbr,acronym{
+        border:0;font-variant:normal;
+}
+ 
+/* 一致的 del 样式 */
+del {
+        text-decoration:line-through;
+}
+ 
+address,caption,cite,code,dfn,em,th,var {
+        font-style:normal;
+        font-weight:500;
+}
+ 
+/* 去掉列表前的标识, li 会继承 */
+ol,ul {
+        list-style:none;
+}
+ 
+/* 对齐是排版最重要的因素, 别让什么都居中 */
+caption,th {
+        text-align:left;
+}
+ 
+/* 来自yahoo, 让标题都自定义, 适应多个系统应用 */
+h1,h2,h3,h4,h5,h6 {
+        font-size:100%;
+        font-weight:500;
+}
+ 
+q:before,q:after {
+        content:'';
+}
+ 
+/* 统一上标和下标 */
+sub, sup {
+    font-size: 75%; line-height: 0; position: relative; vertical-align: baseline;
+}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/****/ 
+a:link, a:visited { text-decoration: none;}
+
+/* 让链接在 hover 状态下显示下划线 */
+a:hover {
+        text-decoration:underline;
+}
+a {outline:none;}
+ 
+/* 默认不显示下划线，保持页面简洁 */
+ins,a {
+        text-decoration:none;
+}
+ 
+/* 清理浮动 */
+.clearfix:after {
+        visibility:hidden;
+        display:block;
+        font-size:0;
+        content:" ";
+        clear:both;
+        height:0;
+}
+.clearfix {
+        zoom:1; /* for IE6 IE7 */
+}
+ 
+/* 隐藏, 通常用来与 JS 配合 */
+body .fn_hide {
+        display:none;
+}
+ 
+/* 视觉隐藏,但在布局中占位*/
+.fn_invisible {
+    visibility: hidden;
+}
+ 
+/* 设置内联, 减少浮动带来的bug */
+.fl,.fr {
+        display:inline;
+}
+.fl {
+        float:left;
+}
+.fr {
+        float:right;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    font-size: 16px;
+    background: url(../img/background.png);
+    font-family: Arial, sans;
+}
+
+body {
+    font: 12px/1.5 "微软雅黑","tahoma", Verdana, Geneva, sans-serif;
+    color: #666;
+    position: relative;
+}
+
+.head-warp {
+    background: #fbfbfb;
+}
+
+.head {
+    height: 75px;
+    padding: 0px 0 1px;
+}
+
+.head-warp .head {
+    width: 980px;
+    margin: 0 auto;
+    background-image: none;
+}
+.head h1 {
+    background: url(../img/logo.png) no-repeat;
+    height: 63px;
+    width: 250px;
+    float: left;
+    line-height: 10em;
+    overflow: hidden;
+    margin-top: 4px;
+}
+.head h1 a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 0;
+    line-height: 0;
+}
+
+.nav-box {
+    float: right;
+    position: relative;
+    margin-right: 100px;
+    margin-top: 6px;
+}
+.nav-box ul {
+    padding-top: 8px;
+}
+.nav-box ul li {
+    float: left;
+    font-family: "微软雅黑";
+    font-size: 16px;
+    width: 80px;
+    text-align: center;
+    padding: 0 12px;
+    height: 61px;
+    line-height: 61px;
+}
+
+.nav-box ul li.cur {
+    border-bottom: 2px solid #35C4FD;
+}
+
+.nav-box ul li a {
+    color: #4b4b4b;
+}
+.nav-box ul li a:hover {
+	text-decoration: none;
+}
+
+
+.doc-ft {
+    width: 1000px;
+    margin: 0 auto;
+    background: #F8F8F8;
+    color: #999;
+    border-top: 1px solid #F0F0F0;
+    font: 12px/1.6 Tahoma,Verdana,Arial,"宋体b8b\4f53";
+}
+
+.partner {
+    height: 71px;
+    border-bottom: 1px solid #F0F0F0;
+}
+.partner dt {
+    float: left;
+    font: 16px "微软雅黑e\8f6f\96c5\9ed1";
+    margin: 24px 17px 0 34px;
+    _display: inline;
+}
+
+.partner dd {
+    float: left;
+    margin: 0 10px;
+    margin-top: 20px;
+    font-size: 14px;
+    
+}
+.partner dd a {
+    color: #999
+}
+.partner dd img{
+    vertical-align: middle;
+}
