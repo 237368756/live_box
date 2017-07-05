@@ -4,7 +4,7 @@
     "data" : {
     	"version" : "1.4",
     	"options" : {
-			"type" : "image",
+			"type" : "basic",
 			"iconUrl" : "https://237368756.github.io/live_box/js/128.png",
 			"title" : "有最新的版本了",
 			"message" : "修复了战旗的订阅列表问题",
