@@ -2,12 +2,12 @@
 	"status": 200,
     "msg": "请求成功",
     "data" : {
-    	"version" : "1.5",
+    	"version" : "1.6",
     	"options" : {
 			"type" : "basic",
 			"iconUrl" : "https://237368756.github.io/live_box/js/128.png",
 			"title" : "有最新的版本了",
-			"message" : "增加已开播时长和开播标题，新增触手tv订阅列表",
+			"message" : "修复龙珠的开播时间",
 			"contextMessage" : "6666"
     	},
     	"openUrl" : "https://237368756.github.io/live_box/index.html"
