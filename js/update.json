@@ -2,12 +2,12 @@
 	"status": 200,
     "msg": "请求成功",
     "data" : {
-    	"version" : "1.7",
+    	"version" : "1.8",
     	"options" : {
 			"type" : "basic",
 			"iconUrl" : "https://237368756.github.io/live_box/js/128.png",
 			"title" : "有最新的版本了",
-			"message" : "优化主播开播的推送机制(浏览器首次启动，就不推送了，防止并发影响用户)",
+			"message" : "新增bilibili直播、YY直播订阅列表",
 			"contextMessage" : "6666"
     	},
     	"openUrl" : "https://237368756.github.io/live_box/index.html"
