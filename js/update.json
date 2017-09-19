@@ -2,12 +2,12 @@
 	"status": 200,
     "msg": "请求成功",
     "data" : {
-    	"version" : "1.9",
+    	"version" : "2.0",
     	"options" : {
 			"type" : "basic",
 			"iconUrl" : "https://237368756.github.io/live_box/js/128.png",
 			"title" : "有最新的版本了",
-			"message" : "修复YY直播订阅列表问题、战旗在线人数的bug、延长开播提醒时间",
+			"message" : "修复斗鱼订阅只显示5个的bug、增加火猫TV",
 			"contextMessage" : "6666"
     	},
     	"openUrl" : "https://237368756.github.io/live_box/index.html"
